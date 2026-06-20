@@ -9,15 +9,18 @@ class Queue:
         
     def dequeue(self): 
         if not self.is_empty():
-            return self.items.popleft() # O(1) ✓
+            return self.items.popleft()
         return 'Queue kosong!'
     
     def peek(self): 
         if not self.is_empty():
             return self.items[0]
         
-    def is_empty(self): return len(self.items) == 0
+    def is_empty(self):
+        return len(self.items) == 0
     
-    def size(self): return len(self.items)
+    def size(self):
+        return len(self.items)
     
-    def __str__(self): return str(list(self.items))
+    def __str__(self): 
+        return str(list(self.items))
